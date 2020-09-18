@@ -1,0 +1,10 @@
+name: Ruby
+on: push
+jobs:
+  publish:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1.45.0
+      with:
+        ruby-version: 2.7
